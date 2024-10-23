@@ -16,17 +16,17 @@ In your `pubspec.yaml` file, add the following dependencies:
 dependencies:
   flutter:
     sdk: flutter
-  youtube_player_flutter: ^8.1.1  # Check for the latest version on pub.dev
+  youtube_player_flutter: ^8.1.1  # Check for the latest version on pub.dev```
 Run the following command to install the package:
 
 bash
 Copy code
-flutter pub get
+```flutter pub get```
 Step 2: Design the Screen for the Video Player
 Create a new Dart file named video_player_screen.dart and add the following code:
 
 dart
-Copy code
+Copy code```
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:flutter/services.dart';
@@ -179,12 +179,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       ),
     );
   }
-}
+} ```
 Step 3: Implement the Video Player Screen
 To navigate to the video player screen from your app, use the following code snippet:
 
 dart
-Copy code
+Copy code ```
 void _onSlideTap(String videoUrl) {
   Navigator.push(
     context,
@@ -192,11 +192,11 @@ void _onSlideTap(String videoUrl) {
       builder: (context) => VideoPlayerScreen(videoUrl: videoUrl),
     ),
   );
-}
+} ```
 Conclusion
 With these steps, you can integrate a YouTube video player into your Flutter application, supporting full-screen mode, automatic orientation, and loading indicators.
 
 arduino
 Copy code
 
-This `README.md` is ready for your project and follows the steps you outlined.
+```This `README.md` is ready for your project and follows the steps you outlined.```
